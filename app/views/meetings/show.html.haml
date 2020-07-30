@@ -1,0 +1,10 @@
+%p#notice= notice
+%h1 DETAIL
+%p1
+  %strong Name:
+  = @meeting.name
+%p1
+  %strong Start time:
+  = @meeting.start_time
+= link_to '編集', edit_meeting_path(@meeting),{class:"backbtn"}
+= link_to 'Back', meetings_path, {class:"backbtn"}

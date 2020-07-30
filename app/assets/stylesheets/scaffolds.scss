@@ -7,7 +7,9 @@ body {
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px; }
+  line-height: 18px; 
+  margin: 30px;
+}
 
 pre {
   background-color: #eee;
@@ -17,8 +19,6 @@ pre {
 a {
   color: #000; }
 
-a:visited {
-}
 
 a:hover {
   color: #fff;
@@ -76,7 +76,14 @@ h1{
   height: 40px;
   width: 100%;
   margin-bottom: 10px;
-  padding-top: 15px;
+  padding-top: 20px;
+  display: flex;
+}
+
+header{
+position: absolute;
+right: 40px;
+top: 60px;
 }
 .first-view{
   width: 100%;
