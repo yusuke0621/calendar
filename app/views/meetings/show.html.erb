@@ -1,14 +1,15 @@
 <p id="notice"><%= notice %></p>
+<h1>DETAIL</h1>
 
-<p>
+<p1>
   <strong>Name:</strong>
   <%= @meeting.name %>
-</p>
+</p1>
 
-<p>
+<p1>
   <strong>Start time:</strong>
   <%= @meeting.start_time %>
-</p>
+</p1>
 
-<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
-<%= link_to 'Back', meetings_path %>
+<%= link_to '編集', edit_meeting_path(@meeting),{class:"backbtn"} %> 
+<%= link_to 'Back', meetings_path, {class:"backbtn"} %>

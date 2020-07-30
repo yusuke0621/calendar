@@ -1,5 +1,54 @@
+form{
+  width: 100%;
+  
+}
+
 .field{
   width: 50%;
   margin: 10% auto;
   min-width: 9rem;
+}
+
+input{
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: darken(#f9f9f9, 10%);
+  color: darken(#f9f9f9, 50%);
+  display: flex;
+  justify-content: center;
+}
+
+select{
+  float: center;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: darken(#f9f9f9, 10%);
+  color: darken(#f9f9f9, 50%);
+}
+
+.actions{
+height: 50px;
+font-size: 50px;
+position: relative;
+margin-top: 100px;
+}
+
+.btn{
+  width: 250px;
+  display: flex;
+  position: absolute;
+  left: 40%;
+}
+
+.backbtn{
+  display: block;
+  text-align: right;
 }
