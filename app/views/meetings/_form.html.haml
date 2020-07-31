@@ -13,5 +13,9 @@
   .field
     = form.label :開始時間を入力してください
     = form.datetime_select :start_time
+    = form.label "画像をアップロード"
+    = form.file_field :image
+      - if @meeting.image?
+      = image_tag @meeting.image.url
   .actions
     = form.submit class:"btn"
