@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_08_01_123123) do
 
-  create_table "comments", force: :cascade do |t|
+  create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
     t.integer "meeting_id"
     t.text "text"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_08_01_123123) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "meetings", force: :cascade do |t|
+  create_table "meetings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.datetime "start_time"
     t.datetime "created_at", precision: 6, null: false
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_08_01_123123) do
     t.string "image"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
