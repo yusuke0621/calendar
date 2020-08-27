@@ -8,7 +8,7 @@ body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; 
-  margin: 30px;
+  margin: 30px 0 0 0;
 }
 
 pre {
@@ -70,7 +70,7 @@ label {
 }
 
 h1{
-  font-size: 60px;
+  font-size: 90px;
   background-color: #2bbbce;
   color: white;
   height: 40px;
@@ -83,7 +83,7 @@ h1{
 header{
 position: absolute;
 right: 40px;
-top: 60px;
+top: 80px;
 }
 .first-view{
   width: 100%;
@@ -141,10 +141,9 @@ table{
   font-size: 20px;
 }
 .btn-square:active {
-  /*ボタンを押したとき*/
   -webkit-transform: translateY(4px);
-  transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 .calendar-title{
@@ -175,6 +174,7 @@ table{
   background: lightgray;
   transition: .4s;
   margin-left: 10px;
+  text-decoration: none;
 }
 .post{
   position: relative;

@@ -43,6 +43,9 @@ textarea,
 p,
 blockquote,
 th,
+a{
+  text-decoration: none;
+}
 td {
   margin:30;
 }

@@ -3,39 +3,31 @@
 ## meetingsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|title|string|null: false, foreign_key: true|
+|name|string|null: false, foreign_key: true|
 |image|string||
 |user_id|integer|null: false, foreign_key: true|
+|start_time|string|null: false
 ### Association
-- belongs_to :group
 - belongs_to :user
+- has_many :comments
 
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |email|string|null: false, unique: true|
 |password|string|null: false|
-|name|string|null: false, unique: true|
+|nickname|string|null: false, unique: true|
 ### Association
-- has_many :groups_users
-- has_many :groups, through: groups_users
-- has_many :messages
+- has_many :meetings
+- has_many :comments
 
 
-## groupsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false, unique: true|
-### Association
-- has_many :groups_users
-- has_many :users, through: groups_users
-- has_many :messages
-
-## groups_usersテーブル
+## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|meeting_id|integer|null: false, foreign_key: true|
+|text|string|
 ### Association
-- belongs_to :group
+- belongs_to :meeting
 - belongs_to :user
