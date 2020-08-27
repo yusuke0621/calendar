@@ -4,7 +4,7 @@ class MeetingsController < ApplicationController
   # GET /meetings
   # GET /meetings.json
   def index
-    @meetings = Meeting.all
+    @meetings = Meeting.order('created_at DESC').limit(10)
   end
 
   # GET /meetings/1

@@ -6,7 +6,7 @@
     %p スケジュール調整を、もっと楽に。
 .secound-view
   %tr
-    %th SHEDULE LIST
+    %th SCHEDULE LIST
     %th{:colspan => "3"}
 %table
   %tbody
@@ -24,3 +24,5 @@
   - meetings.each do |meeting|
     %div
       = link_to meeting.name,meeting
+.footer
+  = render 'footer'
