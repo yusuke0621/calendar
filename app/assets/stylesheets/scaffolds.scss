@@ -99,6 +99,7 @@ header{
 .top-image{
   width: 100%;
   height: 250px;
+  margin-left: 0;
 }
 
 .carousel-caption{
@@ -117,8 +118,6 @@ table{
   margin-top: 0px;
   border:solid 5px #2bbbce;
   background-color: lightgray;
-  width: 80%;
-  min-width: 600px;
 }
 
 .secound-view{
@@ -156,10 +155,20 @@ table{
   font-size: 50px;
 }
 
-.tbody{
+tbody{
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
-
+.schedule_list{
+  height: 200px;
+  min-width: 600px;
+  display: inline-block;
+  width: 100%;
+  overflow: auto;
+  .schedule_list_list{
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .fas{
   display: inline-block;
   text-decoration: none;
