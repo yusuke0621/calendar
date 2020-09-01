@@ -1,7 +1,10 @@
 class CommentsController < ApplicationController
   def create
-    comment = Comment.create(comment_params)
-    redirect_to "/meetings/#{comment.meeting.id}"
+    @comment = Comment.create(comment_params)
+    respond_to do |format|
+      format.html { redirect_to meeting_path(params[:meeting_id])  }
+      format.json
+    end
   end
 
   private
