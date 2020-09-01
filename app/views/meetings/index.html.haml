@@ -7,22 +7,24 @@
 .secound-view
   %tr
     %th SCHEDULE LIST
-    %th{:colspan => "3"}
-%table
-  %tbody{class:"schedule_list"}
-    - @meetings.each do |meeting|
-      %tr{class:"schedule_list_list"}
-        %td= meeting.name
-        %td= meeting.start_time.strftime("%Y-%m-%d %H:%M")
-        %td= link_to '', meeting,{class:"fas fa-list my-white fa-2x"}
-        %td= link_to '', edit_meeting_path(meeting),{class:"fas fa-edit my-white fa-2x"}
-        %td= link_to '', meeting, method: :delete, data: { confirm: 'Are you sure?' },class:"far fa-trash-alt my-white fa-2x"
+  %th{:colspan => "3"}
+- if user_signed_in?
+  %table
+    %tbody{class:"schedule_list"}
+      - @meetings.each do |meeting|
+        %tr{class:"schedule_list_list"}
+          %td= meeting.name
+          %td= meeting.start_time.strftime("%Y-%m-%d %H:%M")
+          %td= link_to '', meeting,{class:"fas fa-list my-white fa-2x"}
+          %td= link_to '', edit_meeting_path(meeting),{class:"fas fa-edit my-white fa-2x"}
+          %td= link_to '', meeting, method: :delete, data: { confirm: 'Are you sure?' },class:"far fa-trash-alt my-white fa-2x"
 %br/
 %a.btn-square{:href => "/meetings/new"} NEW
 = month_calendar events: @meetings do |date, meetings|
   = date.day
-  - meetings.each do |meeting|
-    %div
-      = link_to meeting.name,meeting
+  - if user_signed_in?
+    - meetings.each do |meeting|
+      %div
+        = link_to meeting.name,meeting
 .footer
   = render 'footer'

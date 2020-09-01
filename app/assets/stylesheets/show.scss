@@ -24,4 +24,11 @@ textarea{
 .sendbtn{
   width: 30%;
   flex-direction: row;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #2bbbce;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
 }
