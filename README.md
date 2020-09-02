@@ -8,29 +8,28 @@ https://maneja.herokuapp.com/
 メールアドレス:  test@test.com  
 パスワード: q11111
 
-## Features
+## :bookmark:Features
 [![Image from Gyazo](https://i.gyazo.com/19b0bad5c2bef045face9adf7cda36e7.gif)](https://gyazo.com/19b0bad5c2bef045face9adf7cda36e7)
 - 投稿したスケジュールが"SCHEDULE LIST",カレンダーに反映されます。  
 
 [![Image from Gyazo](https://i.gyazo.com/4bc0a159136511869a88ea39598e84b8.gif)](https://gyazo.com/4bc0a159136511869a88ea39598e84b8)
 - 画像も投稿でき、ログインしているユーザーは各投稿にコメントすることができます。
 
-## Note
+## :pencil:Note
 - 接続先およびログイン情報については、上記の通りです。
 - 投稿方法は以下の手順で確認できます
   テストアカウントでログイン→トップページから"new"ボタン押下→スケジュール入力、画像投稿→登録する
   
-  
-## Requirement
+## :pill:Requirement
 - Ruby/Ruby on Rails/sqlite/Github/Heroku/Visual Studio Code
 
 ## 💬 Usage
 '$ git clone https://github.com/yusuke0621/calendar.git'
 
-## License
-- MIT
+## :ticket:License
+- [MIT](https://github.com/yusuke0621/calendar/blob/master/LICENSE)
 
-## DB
+## :floppy_disk:DB
 ### meetingsテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -62,3 +61,4 @@ https://maneja.herokuapp.com/
 ### Association
 - belongs_to :meeting
 - belongs_to :user
+![](maneja_er.png)
