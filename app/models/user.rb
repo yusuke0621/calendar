@@ -4,4 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :comments
+
+  validates :nickname, :email, presence: true, length: { maximum: 6 }
+  validates :password, presence: true, format: { with:  /\A(?=.*?[a-zA-Z])(?=.*?\d)[a-zA-Z\d]{6,100}+\z/ }, on: :create
 end
