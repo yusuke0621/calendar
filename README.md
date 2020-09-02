@@ -9,8 +9,10 @@ https://maneja.herokuapp.com/
 パスワード: q11111
 
 ## Features
-- 投稿したスケジュールが"SCHEDULE LIST",カレンダーに反映されます。
+[![Image from Gyazo](https://i.gyazo.com/19b0bad5c2bef045face9adf7cda36e7.gif)](https://gyazo.com/19b0bad5c2bef045face9adf7cda36e7)
+- 投稿したスケジュールが"SCHEDULE LIST",カレンダーに反映されます。  
 
+[![Image from Gyazo](https://i.gyazo.com/4bc0a159136511869a88ea39598e84b8.gif)](https://gyazo.com/4bc0a159136511869a88ea39598e84b8)
 - 画像も投稿でき、ログインしているユーザーは各投稿にコメントすることができます。
 
 ## Note
