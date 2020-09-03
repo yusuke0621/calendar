@@ -1,8 +1,8 @@
 # MANEJA
 
-"MANEJA"は工程管理などに使えるスケージュール管理アプリです。
-ログインしたユーザーはスケジュール（画像）の投稿、編集、コメントすることができます。
-投稿した内容をユーザー同士がカレンダーで確認し合うことができます。
+"MANEJA"は工程管理などに使えるスケージュール管理アプリです。  
+ログインしたユーザーはスケジュール（画像）の投稿、編集、コメントすることができます。  
+投稿した内容をユーザー同士がカレンダーで確認し合うことができます。  
 
 ## 🌐 App URL
 https://maneja.herokuapp.com/  
@@ -22,8 +22,8 @@ https://maneja.herokuapp.com/
 - 投稿方法は以下の手順で確認できます
   テストアカウントでログイン→トップページから"new"ボタン押下→スケジュール入力、画像投稿→登録する
   
-## :white_check_mark:background
-住宅のリフォーム企画の仕事をしていた私が、現場の職人さんとの工程管理を円滑に、簡単に運用できるような思いを込めて開発しました。
+## :white_check_mark:Background
+住宅のリフォーム企画の仕事をしていた私が、現場の職人さんとの工程管理を円滑に、簡単に運用できるような思いを込めて開発しました。  
 また、プログラミングスクールで学習しなかった機能に挑戦したい、今後追加の実装がしやすいという観点から、”カレンダー”を使い、開発しました。
 
 ## :white_check_mark:Requirement
@@ -35,7 +35,7 @@ https://maneja.herokuapp.com/
 ## :white_check_mark:License
 - [MIT](https://github.com/yusuke0621/calendar/blob/master/LICENSE)
 
-### :white_check_mark:future
+## :white_check_mark:Future
 ### 今後の実装予定について
 - end_timeの設定、カレンダーに反映
 - APIを使用した会員登録
